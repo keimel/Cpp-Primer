@@ -16,5 +16,5 @@ std::cin >> v1 >> v2; // error: uses "v" not "v1"
 std::cout << v1 + v2 << std::endl;
 return 0;
 // error: missing ; on return statement
-return ++;
+return 0;
 }
