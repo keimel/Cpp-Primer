@@ -1,0 +1,3 @@
+The greates difference between the two loops is that the variable initialized
+in the for loop is only used inside the for body, which should mean that it
+uses memory space shorter. 

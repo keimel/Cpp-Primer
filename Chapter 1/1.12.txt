@@ -1,0 +1,6 @@
+1. Initialize an integer i with -100
+2. If i is smaller then or equal to 100
+  -the integer sum will added with i to sum
+  -i will be incremented
+  
+The final value of sum is 0
