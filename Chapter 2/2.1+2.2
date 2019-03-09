@@ -1,0 +1,18 @@
+[2.1]Difference between:
+1.int, long, long long & short?
+-The size of values that can be fit into each data type:
+ sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)
+2.signed & unsigned types?
+-signed types represent negative & positive numbers (& 0), unsigned types
+ represent numbers greater than or equal to 0
+3.float & double
+-Typically floads are represented in one word(32 bits) and yield 7 significant
+ digits and doubles in two words(64 bits) and yield 16 significant digits
+ 
+[2.2]
+rate(Zinssatz):           As the interst rate can theoretically be all rational numbers
+                          (see: Negative interest on excess reserves for rate below 0%)
+                          we can use double (float for weaker machines).                       
+principal:                The principal is never less then 0, which means we
+(loan size + extra costs) can use an unsigned double (float for weaker machines)     
+payment:                  double and float for the same reasons as interst rate
