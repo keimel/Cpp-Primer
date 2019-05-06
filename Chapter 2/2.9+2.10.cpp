@@ -1,5 +1,5 @@
 /*[2.9]Explain the following definitions. For those that are illegal,
-explain what’s wrong and how to correct it.
+explain whatâ€™s wrong and how to correct it.
 (a) std::cin >> int input_value;    //error: Uninitialized built-in type 
                                       defined in function body, initialize
                                       before executing function
@@ -7,7 +7,7 @@ explain what’s wrong and how to correct it.
                                       of data while type converting will not
                                       compute(int can't hold fraction .14),
                                       use () or delete {}
-(c) double salary = wage = 9999.99; //legal if wage was initialized or  
+(c) double salary = wage = 9999.99; //error: wage first must be defined, initialized or  
                                       assigned a value beforehand
 (d) int i = 3.14;                   //legal but fraction is lost, i=3   
 */
