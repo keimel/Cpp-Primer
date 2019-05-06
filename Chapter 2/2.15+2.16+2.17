@@ -8,7 +8,7 @@
 If they are valid, explain what they do.
 int i = 0, &r1 = i; double d = 0, &r2 = d;
 (a) r2 = 3.14159; //valid, assignes d = 3.14159
-(b) r2 = r1;      //valid, assignes d = 0(from i)
+(b) r2 = r1;      //valid, assignes d = 0.0(from i)
 (c) i = r2;       //valid, assignes i = 0(from d)
 (d) r1 = d;       //valid, assignes i = 0(from d)
 
