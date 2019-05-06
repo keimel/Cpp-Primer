@@ -1,0 +1,14 @@
+[2.13]What is the value of j in the following program?
+int i = 42;
+int main()
+{
+  int i = 100;
+  int j = i;  //because i is also defined in-scope, j = 100
+}
+
+[2.14]Is the following program legal? If so, what values are printed?
+int i = 100, sum = 0;                       //first i is defined
+for (int i = 0; i != 10; ++i)               //second i defined in for loop
+sum += i;                                   //sum + i(from for loop) = sum
+std::cout << i << " " << sum << std::endl;  //the for loop terminated, so the the first i and the value for sum are printed
+//The program is legal; output:"100 45"
