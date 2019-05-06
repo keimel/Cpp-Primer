@@ -1,0 +1,19 @@
+[2.15]Which of the following definitions, if any, are invalid? Why?
+(a) int ival = 1.01;    //valid, but fraction is truncated
+(b) int &rval1 = 1.01;  //invalid, initializer must be an object
+(c) int &rval2 = ival;  //valid
+(d) int &rval3;         //invalid, because references must be initialized
+
+[2.16]Which, if any, of the following assignments are invalid?
+If they are valid, explain what they do.
+int i = 0, &r1 = i; double d = 0, &r2 = d;
+(a) r2 = 3.14159; //valid, assignes d = 3.14159
+(b) r2 = r1;      //valid, assignes d = 0(from i)
+(c) i = r2;       //valid, assignes i = 0(from d)
+(d) r1 = d;       //valid, assignes i = 0(from d)
+
+[2.17]What does the following code print?
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+//output:"10 10"
