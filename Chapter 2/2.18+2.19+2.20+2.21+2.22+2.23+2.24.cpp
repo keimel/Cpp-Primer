@@ -1,11 +1,20 @@
 //[2.18]Write code to change the value of a pointer.
 //Write code to change the value to which the pointer points.
+#include <iostream>
 
 int main()
 {
-  int i = 1, i2 = 2, *p = 0;
-  p = &i; //changes p value to 1
-  *p = i2; //changes the object p points to to i2: i = 2
+  int i = 0, *pi = &i, j;
+  char c;
+  std::cout << "i = "<<i<<"\tpi = &i = "<<pi
+            <<"\nType Integer to change pointer adress.\n" << std::endl;
+  std::cin >> j;
+  pi = &j;
+  std::cout << "pi = "<< pi 
+            << "\nNow type a value you want to place for i\n" << std::endl;
+  std::cin >> j;
+  *pi = j;
+  std::cout << "i = " << *pi << '\n' <<std::endl; 
   return 0;
 }
 /*[2.19]Explain the key differences between pointers and references.
@@ -24,15 +33,15 @@ int i = 42;
 int *p1 = &i;
 *p1 = *p1 * *p1;
 The program initializes an int object i and pointer p1 to 42 and the adress of i
-respectivly. With the Dereference operator(*) p1 access the the of i and assignes
+respectivly. With the Dereference operator(*) p1 access the value of i and assignes
 it the value i*i: 42*42
 
 [2.21]Explain each of the following definitions.
 Indicate whether any are illegal and, if so, why.
 int i = 0;
-(a) double* dp = &i; //illegal, * must be part of and stand before the variable name
+(a) double* dp = &i; //illegal, type must be the same
 (b) int *ip = i;     //illegal, & operator before i is missing: int *ip = &i
-(c) int *p = &i;     //legal, define a pointer p to int and initialize itu to point at the adress of i
+(c) int *p = &i;     //legal, defines a pointer p to int and initialize it to point at the adress of i
 
 [2.22]Assuming p is a pointer to int, explain the following code:
 if (p) // ... same as with integer literals; 0 = false, nonzero = true
