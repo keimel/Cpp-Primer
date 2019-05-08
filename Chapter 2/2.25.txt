@@ -1,0 +1,4 @@
+[2.25]Determine the types and values of each of the following variables.
+(a) int* ip, &r = ip; //ip: int pointer with random adress, r: int reference referencing ip 
+(b) int i, *ip = 0;   //i: int either 0 or undefined, ip: int pointer pointing at 0/nullptr
+(c) int* ip, ip2;     //ip: int pointer with random adress, ip2: int either 0 or undefined
