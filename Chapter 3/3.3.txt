@@ -1,0 +1,6 @@
+/*
+[3.3]Explain how whitespace characters are handled in the string input operator and in the getline function.
+*/
+
+string input operator: It reads & discards any leading whitespace (including tabs & newlines) & reads the following characters until the next whitespace.
+getline function: It reads & returns any characters until a newline
