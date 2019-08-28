@@ -13,11 +13,12 @@ int main()
         //as long as Stings are given/typed
         while(std::cin >> str){
         //go thru each string   
-                for(char &c: str){
-                      //if it's punctuated, change it to whitespace
-                        if(ispunct(c))
-                               c = '\0';
-                }
+                for(decltype(str.size()) c = 0; c < str.size(); ++c){
+                        //if punctuated, erase!
+                        if(ispunct(str[c])){
+                                str.erase(str.begin() + c);
+                                --c;
+                                }
                 // add the changes + a whitespace to the final String
                 strOut += str + " ";
         }
